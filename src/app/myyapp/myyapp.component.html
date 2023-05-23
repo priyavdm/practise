@@ -1,0 +1,81 @@
+<p>myyapp works!</p>
+<h1>child title</h1>
+<h3>childtitle {{myapptitle}}</h3>
+<h1>parent title access by child component</h1>
+<h2>parenttitle {{property}}</h2>
+<h2>parenttitle2 {{child}}</h2>
+
+if else block............
+<h2 *ngIf="show; else elseBlock">welcome</h2>
+<ng-template #elseBlock><p>not welcome</p></ng-template>
+
+array of elements..........
+<h5 *ngFor="let p of parent;">{{p}}</h5>
+
+array of objects..........
+<table>
+    <thead>
+<tr>
+    <th>id</th>
+    <th>name</th>
+    <th>age</th>
+    <th>gender</th>
+</tr>
+</thead>
+<tbody *ngFor="let r of work;index as i">
+    <tr>
+        <td>{{i}}</td>
+        <td>{{r.name}}</td>
+        <td>{{r.age}}</td>
+        <td>{{r.gender}}</td>
+    </tr>
+</tbody>
+</table>
+
+buttons...............
+
+<button (click)="onClick()">Click</button>
+<button (click)="onTouch()">Touch</button>
+
+
+<div>
+<p>Enter your name
+<input type="text" #formname value="{{name}}">
+</p>
+</div>
+<div>
+    <p> Enter your email
+<input type="text" #formemail value="{{email}}">
+</p>
+</div>
+<div>
+    <p> Enter your message
+    <input type="text" #formmessage value="{{message}}">
+</p>   
+</div>
+<div>
+    <button (click)="onClick1(formname.value,formemail.value,formmessage.value)">Submit</button>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>message</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <td>
+                <th></th>
+                <th></th>
+                <th></th>
+            </td> -->
+        </tbody>
+    </table>
+</div>
+
+
+
