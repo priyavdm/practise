@@ -1,20 +1,21 @@
-import { Component, EventEmitter, Input, Output,AfterViewInit} from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-myyapp',
   templateUrl: './myyapp.component.html',
   styleUrls: ['./myyapp.component.scss']
 })
-export class MyyappComponent implements AfterViewInit{
+export class MyyappComponent{
 
   name:string='';
   email:string='';
   message:string='';
-   ngAfterViewInit(): void {
-    //  throw new Error('Method not implemented.');
-    console.log('inside view init');
+  twoWay='Heading';
+  //  ngAfterViewInit(): void {
+  //   //  throw new Error('Method not implemented.');
+  //   console.log('inside view init');
     
-   }
+  //  }
 
    myapptitle:string='myproject';
    show:boolean=true;

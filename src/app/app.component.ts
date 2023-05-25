@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit{
   var3:any[]=[];
 
   arr=['priya','rajesh','rajiv','selva','roshin'];
-  arr1=[{name:'priya',age:22,gender:'female'},{name:'leela',age:22,gender:'female'},{name:'ajisha',age:22,gender:'female'}];
+  arr1=[{name:'priya',age:20,gender:'female'},{name:'leela',age:22,gender:'female'},{name:'ajisha',age:22,gender:'female'}];
 
   @ViewChild(MyyappComponent) child:any;
 
@@ -44,6 +44,15 @@ export class AppComponent implements AfterViewInit{
       console.log(this.var3);
       
       }
+      
+      onTouch1(datavalue:any){
+
+        for(let i=0;i<this.var3.length;i++){
+          let a=this.var3[i];
+          
+        }
+      }
+
   
   
 }

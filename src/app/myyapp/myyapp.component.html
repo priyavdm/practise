@@ -57,7 +57,7 @@ buttons...............
     <button (click)="onClick1(formname.value,formemail.value,formmessage.value)">Submit</button>
 </div>
 
-<div>
+<!-- <div>
     <table>
         <thead>
             <tr>
@@ -67,15 +67,19 @@ buttons...............
 
             </tr>
         </thead>
-        <tbody>
+        <tbody> -->
             <!-- <td>
                 <th></th>
                 <th></th>
                 <th></th>
             </td> -->
-        </tbody>
+        <!-- </tbody>
     </table>
-</div>
+</div> -->
+
+twoway binding...........
+<input type="text" [(ngModel)]="twoWay">
+{{twoWay}}
 
 
 
